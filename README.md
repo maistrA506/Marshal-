@@ -1,1 +1,657 @@
-# Marshal-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENKOR | New Arrival 2026</title>
+
+    <!-- ============================================ -->
+    <!-- 1. GOOGLE FONTS                              -->
+    <!-- ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- ============================================ -->
+    <!-- 2. SOCIAL MEDIA PREVIEW TAGS                 -->
+    <!-- ============================================ -->
+    <meta property="og:title" content="ENKOR New Arrival 2026.6.18" />
+    <meta property="og:description" content="Absolute Perfection Bass – Beating your heart. Pre-order EK3161, EK3160 & EKSB61 now!" />
+    <meta property="og:image" content="https://maistrA506.github.io/ENKOR-LAUNCH/images/ek3161.jpg" />
+    <meta property="og:url" content="https://maistrA506.github.io/ENKOR-LAUNCH/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- ============================================ -->
+    <!-- 3. FAVICON                                   -->
+    <!-- ============================================ -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔊</text></svg>" />
+
+    <!-- ============================================ -->
+    <!-- 4. GOOGLE ANALYTICS (OPTIONAL - REPLACE ID) -->
+    <!-- ============================================ -->
+    <!-- Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0b0b0b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* ---------- MAIN BANNER ---------- */
+        .enkor-banner {
+            max-width: 1100px;
+            width: 100%;
+            background: radial-gradient(circle at 20% 20%, #1a1a1a, #0b0b0b 80%);
+            padding: 50px 30px;
+            border-radius: 32px;
+            border: 1px solid rgba(230, 0, 0, 0.15);
+            box-shadow: 0 20px 80px rgba(0, 0, 0, 0.8), 0 0 60px rgba(230, 0, 0, 0.03);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .enkor-banner::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -30%;
+            width: 160%;
+            height: 160%;
+            background: radial-gradient(circle at center, rgba(230, 0, 0, 0.04) 0%, transparent 60%);
+            animation: pulseGlow 6s ease-in-out infinite;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+        }
+
+        .enkor-banner * {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ---------- LOGO ---------- */
+        .enkor-logo {
+            font-size: 56px;
+            font-weight: 900;
+            letter-spacing: 10px;
+            color: #ffffff;
+            text-shadow: 0 0 40px rgba(230, 0, 0, 0.25);
+            line-height: 1;
+        }
+
+        .enkor-logo span {
+            color: #e60000;
+        }
+
+        .enkor-tagline {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            color: #888888;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+        .divider-line {
+            width: 80px;
+            height: 3px;
+            background: #e60000;
+            margin: 18px auto 22px auto;
+            border-radius: 4px;
+            box-shadow: 0 0 20px rgba(230, 0, 0, 0.4);
+        }
+
+        /* ---------- HEADLINE ---------- */
+        .enkor-headline {
+            font-size: 54px;
+            font-weight: 900;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            line-height: 1.15;
+        }
+
+        .enkor-headline .highlight {
+            color: #e60000;
+            text-shadow: 0 0 50px rgba(230, 0, 0, 0.5);
+        }
+
+        .enkor-subheadline {
+            font-size: 20px;
+            font-weight: 400;
+            color: #cccccc;
+            margin-top: 10px;
+            letter-spacing: 3px;
+        }
+
+        /* ---------- PRODUCT GRID ---------- */
+        .enkor-models {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .enkor-model-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            padding: 25px 20px 20px;
+            width: 200px;
+            backdrop-filter: blur(6px);
+            transition: all 0.35s ease;
+            cursor: default;
+        }
+
+        .enkor-model-card:hover {
+            transform: translateY(-12px);
+            border-color: #e60000;
+            box-shadow: 0 20px 50px rgba(230, 0, 0, 0.15);
+            background: rgba(230, 0, 0, 0.04);
+        }
+
+        .enkor-model-img {
+            width: 100%;
+            height: 140px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #e60000;
+            border: 1px dashed rgba(255, 255, 255, 0.08);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .enkor-model-card:hover .enkor-model-img {
+            border-color: #e60000;
+            background: rgba(230, 0, 0, 0.06);
+        }
+
+        .enkor-model-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Fallback emoji will show if image fails to load */
+        .enkor-model-name {
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .enkor-model-price {
+            font-size: 28px;
+            font-weight: 900;
+            color: #e60000;
+            margin: 4px 0 2px;
+            text-shadow: 0 0 20px rgba(230, 0, 0, 0.2);
+        }
+
+        .enkor-model-desc {
+            font-size: 12px;
+            font-weight: 400;
+            color: #888;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .enkor-model-badge {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            background: #e60000;
+            color: #fff;
+            padding: 2px 12px;
+            border-radius: 30px;
+            letter-spacing: 1px;
+            margin-top: 6px;
+            text-transform: uppercase;
+        }
+
+        .enkor-model-badge.soundbar {
+            background: #333;
+            color: #e60000;
+            border: 1px solid #e60000;
+        }
+
+        /* ---------- COUNTDOWN ---------- */
+        .enkor-countdown {
+            margin-top: 40px;
+            font-size: 18px;
+            font-weight: 400;
+            color: #aaaaaa;
+            letter-spacing: 2px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .enkor-countdown span {
+            font-size: 34px;
+            font-weight: 900;
+            color: #ffffff;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 6px 18px;
+            border-radius: 12px;
+            margin: 0 4px;
+            border: 1px solid #2a2a2a;
+            min-width: 70px;
+            display: inline-block;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .enkor-countdown .label {
+            font-size: 14px;
+            font-weight: 300;
+            color: #666;
+        }
+
+        /* ---------- TRUST SECTION ---------- */
+        .trust-section {
+            margin: 40px auto 0;
+            padding: 28px 30px;
+            max-width: 640px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            text-align: left;
+        }
+
+        .trust-section h3 {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .trust-section h3 span {
+            color: #e60000;
+        }
+
+        .trust-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            margin-bottom: 12px;
+            color: #bbbbbb;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .trust-step .num {
+            background: #e60000;
+            color: #fff;
+            font-weight: 900;
+            font-size: 14px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .trust-step strong {
+            color: #ffffff;
+        }
+
+        .trust-footer {
+            text-align: center;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #666;
+            font-size: 13px;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+
+        .trust-footer span {
+            color: #e60000;
+        }
+
+        .trust-footer strong {
+            color: #ffffff;
+        }
+
+        /* ---------- GOOGLE SHEETS SECTION ---------- */
+        .gsheet-section {
+            margin: 30px auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .gsheet-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid #2a2a2a;
+            color: #aaaaaa;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+
+        .gsheet-btn:hover {
+            border-color: #e60000;
+            color: #ffffff;
+            background: rgba(230, 0, 0, 0.08);
+            box-shadow: 0 0 30px rgba(230, 0, 0, 0.05);
+        }
+
+        .gsheet-btn.admin {
+            border-color: #e60000;
+            color: #e60000;
+        }
+
+        .gsheet-btn.admin:hover {
+            background: #e60000;
+            color: #ffffff;
+            box-shadow: 0 0 40px rgba(230, 0, 0, 0.2);
+        }
+
+        /* ---------- IFRAME ---------- */
+        .gsheet-iframe-wrapper {
+            max-width: 900px;
+            margin: 20px auto 0;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #1a1a1a;
+            display: none;
+        }
+
+        .gsheet-iframe-wrapper.active {
+            display: block;
+        }
+
+        .gsheet-iframe-wrapper iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            background: #0b0b0b;
+        }
+
+        /* ---------- CTA BUTTONS ---------- */
+        .enkor-cta-wrapper {
+            margin-top: 35px;
+        }
+
+        .enkor-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #e60000, #cc0000);
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 900;
+            padding: 18px 70px;
+            text-decoration: none;
+            border-radius: 60px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 40px rgba(230, 0, 0, 0.35);
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+
+        .enkor-cta:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 60px rgba(230, 0, 0, 0.6);
+            background: linear-gradient(135deg, #ff1a1a, #e60000);
+        }
+
+        .enkor-cta:active {
+            transform: scale(0.97);
+        }
+
+        /* ---------- CALL BUTTON (NEW) ---------- */
+        .call-btn-wrapper {
+            margin-top: 12px;
+        }
+
+        .call-btn {
+            display: inline-block;
+            color: #888;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
+            border: 1px solid #333;
+            padding: 10px 30px;
+            border-radius: 40px;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .call-btn:hover {
+            border-color: #e60000;
+            color: #ffffff;
+            background: rgba(230, 0, 0, 0.05);
+            box-shadow: 0 0 30px rgba(230, 0, 0, 0.03);
+        }
+
+        /* ---------- FOOTER ---------- */
+        .enkor-footer {
+            margin-top: 40px;
+            font-size: 13px;
+            font-weight: 300;
+            color: #555;
+            letter-spacing: 4px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .enkor-footer .red {
+            color: #e60000;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 768px) {
+            .enkor-banner {
+                padding: 35px 18px;
+                border-radius: 24px;
+            }
+            .enkor-logo {
+                font-size: 38px;
+                letter-spacing: 6px;
+            }
+            .enkor-tagline {
+                font-size: 12px;
+                letter-spacing: 5px;
+            }
+            .enkor-headline {
+                font-size: 32px;
+                letter-spacing: 2px;
+            }
+            .enkor-subheadline {
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+            .enkor-models {
+                gap: 16px;
+            }
+            .enkor-model-card {
+                width: 160px;
+                padding: 18px 14px;
+            }
+            .enkor-model-img {
+                height: 110px;
+                font-size: 50px;
+            }
+            .enkor-model-price {
+                font-size: 24px;
+            }
+            .enkor-countdown span {
+                font-size: 24px;
+                padding: 4px 12px;
+                min-width: 50px;
+            }
+            .enkor-countdown .label {
+                font-size: 11px;
+            }
+            .trust-section {
+                padding: 20px 16px;
+            }
+            .trust-step {
+                font-size: 14px;
+            }
+            .enkor-cta {
+                font-size: 17px;
+                padding: 16px 40px;
+                letter-spacing: 2px;
+            }
+            .enkor-footer {
+                font-size: 11px;
+                letter-spacing: 2px;
+            }
+            .gsheet-btn {
+                font-size: 12px;
+                padding: 8px 20px;
+            }
+            .gsheet-iframe-wrapper iframe {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .enkor-headline {
+                font-size: 26px;
+            }
+            .enkor-models {
+                flex-direction: column;
+                align-items: center;
+            }
+            .enkor-model-card {
+                width: 90%;
+                max-width: 280px;
+            }
+            .enkor-model-img {
+                height: 140px;
+                font-size: 60px;
+            }
+            .enkor-countdown span {
+                font-size: 20px;
+                padding: 3px 8px;
+                min-width: 40px;
+            }
+            .gsheet-iframe-wrapper iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="enkor-banner">
+
+        <!-- ===== LOGO ===== -->
+        <div class="enkor-logo">ENKOR<span>.</span></div>
+        <div class="enkor-tagline">Enjoying Life</div>
+        <div class="divider-line"></div>
+
+        <!-- ===== HEADLINE ===== -->
+        <div class="enkor-headline">
+            The Wait Is <span class="highlight">Over</span>
+        </div>
+        <div class="enkor-subheadline">
+            Absolute Perfection Bass – Beating your heart.
+        </div>
+
+        <!-- ===== PRODUCT GRID ===== -->
+        <div class="enkor-models">
+
+            <div class="enkor-model-card">
+                <div class="enkor-model-img" id="img-ek3161">
+                    <!-- 📸 Upload ek3161.jpg to images/ folder to replace this emoji -->
+                    <img src="images/ek3161.jpg" alt="ENKOR EK3161 Speaker" 
+                         onerror="this.style.display='none'; this.parentNode.innerHTML='🔊';" />
+                </div>
+                <div class="enkor-model-name">EK3161</div>
+                <div class="enkor-model-price">4,400</div>
+                <div class="enkor-model-desc">Multimedia Speaker</div>
+                <span class="enkor-model-badge">New</span>
+            </div>
+
+            <div class="enkor-model-card">
+                <div class="enkor-model-img" id="img-ek3160">
+                    <!-- 📸 Upload ek3160.jpg to images/ folder to replace this emoji -->
+                    <img src="images/ek3160.jpg" alt="ENKOR EK3160 Speaker" 
+                         onerror="this.style.display='none'; this.parentNode.innerHTML='🔊';" />
+                </div>
+                <div class="enkor-model-name">EK3160</div>
+                <div class="enkor-model-price">4,300</div>
+                <div class="enkor-model-desc">Multimedia Speaker</div>
+                <span class="enkor-model-badge">New</span>
+            </div>
+
+            <div class="enkor-model-card">
+                <div class="enkor-model-img" id="img-eksb61">
+                    <!-- 📸 Upload eksb61.jpg to images/ folder to replace this emoji -->
+                    <img src="images/eksb61.jpg" alt="ENKOR EKSB61 Soundbar" 
+                         onerror="this.style.display='none'; this.parentNode.innerHTML='🔊';" />
+                </div>
+                <div class="enkor-model-name">EKSB61</div>
+                <div class="enkor-model-price">—</div>
+                <div class="enkor-model-desc">2:1:2 CH Soundbar</div>
+                <span class="enkor-model-badge soundbar">Premium</span>
+            </div>
+
+        </div>
+
+        <!-- ===== COUNTDOWN ===== -->
+        <div class="enkor-countdown">
+            🗓️ Arrives in
+            <span id="days">00</span> <span class="label">d</span>
+            <span id="hours">00</
